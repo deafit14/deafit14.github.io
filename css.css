@@ -1,0 +1,8 @@
+.tentang {
+  height: 20vh;
+  background-color: black;
+  display: flex;
+  /* background-color: aqua; */
+  justify-content: center;
+  align-items: center;
+}

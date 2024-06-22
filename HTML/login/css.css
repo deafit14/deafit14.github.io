@@ -1,0 +1,34 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.halamanSatu {
+  background-image: url(../../GAMBAR/Ground_edited.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 160vh; */
+}
+
+.kontainer {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  padding: 9px;
+  /* height: 160vh; */
+}
+
+.carousel-item h1 {
+  font-size: 13vw;
+}
+
+.pilihan {
+  padding-top: 30px;
+}
+.tentang {
+  height: 20vh;
+  background-color: black;
+  display: flex;
+  /* background-color: aqua; */
+  justify-content: center;
+  align-items: center;
+}
