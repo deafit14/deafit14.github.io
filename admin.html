@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control Room - Admin Panel</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <div class="admin-container">
+      <h1>⚙️ KONTROL BANDAR ⚙️</h1>
+      <p>Pantau dan atur manipulasi untuk setiap korban (siswa).</p>
+
+      <button onclick="loadData()" class="btn-refresh">
+        🔄 Segarkan Data (Refresh)
+      </button>
+      <p id="statusMessage" class="status"></p>
+
+      <div class="table-wrapper">
+        <table id="playerTable">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama Siswa</th>
+              <th>Sisa Saldo</th>
+              <th>Tambah Saldo (Rp)</th>
+              <th>Persentase Menang (%)</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <tr>
+              <td colspan="6">Memuat data dari server...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <button onclick="window.location.href = 'index.html'" class="btn-back">
+        Kembali ke Login
+      </button>
+    </div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

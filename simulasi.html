@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulasi Bermain</title>
+    <link rel="stylesheet" href="simulasi.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 id="welcomePlayer">⚡ SIMULASI PETIR ⚡</h1>
+        <p>Membuktikan secara logis cara kerja algoritma bandar</p>
+      </div>
+
+      <div class="game-area" id="game-area">
+        <div class="stats">
+          <div class="balance-box">
+            Saldo: Rp <span id="balance">100000</span>
+          </div>
+          <div class="multiplier-box" id="multiplier-display">Pengali: x0</div>
+        </div>
+
+        <!-- Grid 6x5 -->
+        <div class="grid" id="grid"></div>
+
+        <div class="controls">
+          <button id="spinBtn" onclick="spin()">SPIN (Rp 10.000)</button>
+        </div>
+
+        <div id="message" class="message">
+          Tekan Spin untuk menjatuhkan simbol.
+        </div>
+      </div>
+
+      <div style="margin-top: 20px">
+        <button onclick="window.location.href = 'index.html'" class="btn-exit">
+          Ganti Pemain (Keluar)
+        </button>
+      </div>
+    </div>
+
+    <script src="simulasi.js"></script>
+  </body>
+</html>
